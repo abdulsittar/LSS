@@ -47,3 +47,8 @@ A Node.js application for running and analyzing large-scale social media simulat
 ![Liking](./Analysis/liking_timing_chart.png)
 ![Disliking](./Analysis/disliking_timing_chart.png)
 ![Ranking](./Analysis/ranking_timing_chart.png)
+
+### 💰 Sentiment Analysis Over Time
+
+![Sentiment of posts by top users](./Analysis/posts_sentiment_scores_chart.png)
+![Sentiment of comments by top users](./Analysis/comments_sentiment_scores_chart.png)
