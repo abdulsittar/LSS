@@ -149,8 +149,8 @@ function saveDataToJson() {
   };
 
   // Save the data to a JSON file
-  fs.writeFileSync('simulation_data.json', JSON.stringify(data, null, 2), 'utf-8');
-  console.log("Data saved to simulation_data.json");
+  fs.writeFileSync('Synthetic Data/simulation_data.json', JSON.stringify(data, null, 2), 'utf-8');
+  console.log("Data saved to Synthetic Data/simulation_data.json");
 }
 
 async function getUserActionProbabilities(userFeatures, actionLabels) {

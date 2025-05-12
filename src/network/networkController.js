@@ -76,8 +76,8 @@ async function createNetwork(req, res) {
       ...graph.getNodeAttributes(node),
     }));
 
-    fs.writeFileSync("network.dot", exportToDOT(graph));
-    exec("dot -Tpng network.dot -o network.png", (err) => {
+    fs.writeFileSync("Analysis/network.dot", exportToDOT(graph));
+    exec("dot -Tpng network.dot -o Analysis/network.png", (err) => {
       if (err) console.error("❌ Error generating PNG:", err);
       else console.log("✅ Graph saved as network.png");
     });
