@@ -29,6 +29,19 @@ A Node.js application for running and analyzing large-scale social media simulat
    TOGETHER_API_KEY=your_key_here
    npm start
 
+## Equations
+
+Time Budget (Ti):
+Ti = 100 - 20 * (number of posts) - 20 * (number of comments) - 5 * (number of likes + dislikes)
+
+Motivation (Mj):
+Mj = initial motivation + 5 * (likes received) - 5 * (dislikes received)
+
+$$
+T_i = 100 - 20 \cdot N_{post}^{(i)} - 20 \cdot N_{comment}^{(i)} - 5 \cdot (N_{like}^{(i)} + N_{dislike}^{(i)})
+$$
+
+
 
 ## 📊 Visual Outputs
 
@@ -40,7 +53,7 @@ A Node.js application for running and analyzing large-scale social media simulat
   
   ---
 
-### 💰 Cost Analysis Over Time
+### Cost Analysis Over Time
 
 ![Posting](./Analysis/posting_timing_chart.png)
 ![Commenting](./Analysis/commenting_timing_chart.png)
@@ -48,7 +61,7 @@ A Node.js application for running and analyzing large-scale social media simulat
 ![Disliking](./Analysis/disliking_timing_chart.png)
 ![Ranking](./Analysis/ranking_timing_chart.png)
 
-### 💰 Sentiment Analysis Over Time
+### Sentiment Analysis Over Time
 
 ![Sentiment of posts by top users](./Analysis/posts_sentiment_scores_chart.png)
 ![Sentiment of comments by top users](./Analysis/comments_sentiment_scores_chart.png)
