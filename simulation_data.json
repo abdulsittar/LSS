@@ -8,8 +8,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 60,
-        "used": 40
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -27,8 +27,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 60,
-        "used": 40
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -46,8 +46,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 60,
-        "used": 40
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -65,8 +65,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 60,
-        "used": 40
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -84,8 +84,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 60,
-        "used": 40
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -103,8 +103,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 65,
-        "used": 35
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -122,8 +122,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 65,
-        "used": 35
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -141,8 +141,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 65,
-        "used": 35
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -160,8 +160,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 65,
-        "used": 35
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -179,8 +179,8 @@
       "following": [],
       "posts": [],
       "timeBudget": {
-        "total": 65,
-        "used": 35
+        "total": 100,
+        "used": 0
       },
       "entertainmentScore": 0,
       "feedbackScore": 0,
@@ -191,752 +191,3018 @@
       "frustration": 0
     }
   ],
-  "posts": [
-    {
-      "id": "9n3cdeyr",
-      "userId": 1,
-      "username": "user0",
-      "content": "\"Let's foster understanding & respectful dialogue on the current political issue. We're all part of the same community, let's work together for a brighter future 🌟 #Politics #Dialogue #Community\"",
-      "timestamp": 1747040908125
-    },
-    {
-      "id": "hupqsa6e",
-      "userId": 2,
-      "username": "user1",
-      "content": "\"Let's foster understanding & respectful dialogue on the current political issue. We're all part of the same community, let's work together for a brighter future 🌟 #Politics #Dialogue #Community\"",
-      "timestamp": 1747040908736
-    },
-    {
-      "id": "n5bi5mx4",
-      "userId": 1,
-      "username": "user0",
-      "content": "\"Let's unpack that promise together, folks! 🤝 #Promises #Politics #Discussion\"",
-      "timestamp": 1747040909238
-    },
-    {
-      "id": "srsuaigc",
-      "userId": 2,
-      "username": "user1",
-      "content": "\"Let's break the silence and share our thoughts respectfully on this political issue. 🗣️ #OpenDiscussion #Community #Understanding\"",
-      "timestamp": 1747040909873
-    }
-  ],
-  "comments": [
-    {
-      "id": "73gt52l4",
-      "postId": "hupqsa6e",
-      "userId": 3,
-      "content": "Interesting view, user2 responds.",
-      "timestamp": 1747040908736
-    },
-    {
-      "id": "jdnkgh8b",
-      "postId": "hupqsa6e",
-      "userId": 4,
-      "content": "Interesting view, user3 responds.",
-      "timestamp": 1747040908736
-    },
-    {
-      "id": "fmz1o57a",
-      "postId": "9n3cdeyr",
-      "userId": 5,
-      "content": "Interesting view, user4 responds.",
-      "timestamp": 1747040908736
-    },
-    {
-      "id": "jf2iqsvg",
-      "postId": "9n3cdeyr",
-      "userId": 3,
-      "content": "Interesting view, user2 responds.",
-      "timestamp": 1747040909874
-    },
-    {
-      "id": "qv0cytzo",
-      "postId": "hupqsa6e",
-      "userId": 4,
-      "content": "Interesting view, user3 responds.",
-      "timestamp": 1747040909874
-    },
-    {
-      "id": "a5wfujpl",
-      "postId": "srsuaigc",
-      "userId": 5,
-      "content": "Interesting view, user4 responds.",
-      "timestamp": 1747040909874
-    }
-  ],
-  "likes": [
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 6,
-      "timestamp": 1747040908737
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 7,
-      "timestamp": 1747040908737
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 8,
-      "timestamp": 1747040908737
-    },
-    {
-      "type": "like",
-      "postId": "n5bi5mx4",
-      "userId": 6,
-      "timestamp": 1747040909874
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 7,
-      "timestamp": 1747040909874
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 8,
-      "timestamp": 1747040909874
-    },
-    {
-      "type": "like",
-      "postId": "srsuaigc",
-      "userId": 6,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "like",
-      "postId": "n5bi5mx4",
-      "userId": 7,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "like",
-      "postId": "n5bi5mx4",
-      "userId": 8,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "like",
-      "postId": "srsuaigc",
-      "userId": 6,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 7,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "like",
-      "postId": "srsuaigc",
-      "userId": 8,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "like",
-      "postId": "srsuaigc",
-      "userId": 6,
-      "timestamp": 1747040909876
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 7,
-      "timestamp": 1747040909876
-    },
-    {
-      "type": "like",
-      "postId": "n5bi5mx4",
-      "userId": 8,
-      "timestamp": 1747040909876
-    },
-    {
-      "type": "like",
-      "postId": "srsuaigc",
-      "userId": 6,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 7,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "like",
-      "postId": "9n3cdeyr",
-      "userId": 8,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 6,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "like",
-      "postId": "hupqsa6e",
-      "userId": 7,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "like",
-      "postId": "n5bi5mx4",
-      "userId": 8,
-      "timestamp": 1747040909877
-    }
-  ],
-  "dislikes": [
-    {
-      "type": "dislike",
-      "postId": "hupqsa6e",
-      "userId": 9,
-      "timestamp": 1747040908737
-    },
-    {
-      "type": "dislike",
-      "postId": "9n3cdeyr",
-      "userId": 10,
-      "timestamp": 1747040908737
-    },
-    {
-      "type": "dislike",
-      "postId": "hupqsa6e",
-      "userId": 9,
-      "timestamp": 1747040909874
-    },
-    {
-      "type": "dislike",
-      "postId": "hupqsa6e",
-      "userId": 10,
-      "timestamp": 1747040909874
-    },
-    {
-      "type": "dislike",
-      "postId": "n5bi5mx4",
-      "userId": 9,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "dislike",
-      "postId": "9n3cdeyr",
-      "userId": 10,
-      "timestamp": 1747040909875
-    },
-    {
-      "type": "dislike",
-      "postId": "hupqsa6e",
-      "userId": 9,
-      "timestamp": 1747040909876
-    },
-    {
-      "type": "dislike",
-      "postId": "hupqsa6e",
-      "userId": 10,
-      "timestamp": 1747040909876
-    },
-    {
-      "type": "dislike",
-      "postId": "srsuaigc",
-      "userId": 9,
-      "timestamp": 1747040909876
-    },
-    {
-      "type": "dislike",
-      "postId": "hupqsa6e",
-      "userId": 10,
-      "timestamp": 1747040909876
-    },
-    {
-      "type": "dislike",
-      "postId": "hupqsa6e",
-      "userId": 9,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "dislike",
-      "postId": "n5bi5mx4",
-      "userId": 10,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "dislike",
-      "postId": "n5bi5mx4",
-      "userId": 9,
-      "timestamp": 1747040909877
-    },
-    {
-      "type": "dislike",
-      "postId": "n5bi5mx4",
-      "userId": 10,
-      "timestamp": 1747040909877
-    }
-  ],
+  "posts": [],
+  "comments": [],
+  "likes": [],
+  "dislikes": [],
   "rankingTiming": [
     {
       "label": "ranking",
-      "durationMs": 0.15968704223632812,
-      "timestamp": 1747040906656
+      "durationMs": 0.15674781799316406,
+      "timestamp": 1747045633229
     },
     {
       "label": "ranking",
-      "durationMs": 0.026149749755859375,
-      "timestamp": 1747040908126
+      "durationMs": 0.019962310791015625,
+      "timestamp": 1747045633785
     },
     {
       "label": "ranking",
-      "durationMs": 0.026781082153320312,
-      "timestamp": 1747040908736
+      "durationMs": 0.020624160766601562,
+      "timestamp": 1747045634034
     },
     {
       "label": "ranking",
-      "durationMs": 0.017431259155273438,
-      "timestamp": 1747040908736
+      "durationMs": 0.015666961669921875,
+      "timestamp": 1747045634034
     },
     {
       "label": "ranking",
-      "durationMs": 0.012094497680664062,
-      "timestamp": 1747040908736
+      "durationMs": 0.011722564697265625,
+      "timestamp": 1747045634034
     },
     {
       "label": "ranking",
-      "durationMs": 0.010608673095703125,
-      "timestamp": 1747040908737
+      "durationMs": 0.010072708129882812,
+      "timestamp": 1747045634034
     },
     {
       "label": "ranking",
-      "durationMs": 0.014461517333984375,
-      "timestamp": 1747040908737
+      "durationMs": 0.01131439208984375,
+      "timestamp": 1747045634034
     },
     {
       "label": "ranking",
-      "durationMs": 0.011505126953125,
-      "timestamp": 1747040908737
+      "durationMs": 0.0102081298828125,
+      "timestamp": 1747045634034
     },
     {
       "label": "ranking",
-      "durationMs": 0.09299087524414062,
-      "timestamp": 1747040908737
+      "durationMs": 0.07444572448730469,
+      "timestamp": 1747045634034
     },
     {
       "label": "ranking",
-      "durationMs": 0.022089004516601562,
-      "timestamp": 1747040908737
+      "durationMs": 0.02252960205078125,
+      "timestamp": 1747045634035
     },
     {
       "label": "ranking",
-      "durationMs": 0.013631820678710938,
-      "timestamp": 1747040908737
+      "durationMs": 0.012683868408203125,
+      "timestamp": 1747045634035
     },
     {
       "label": "ranking",
-      "durationMs": 0.021734237670898438,
-      "timestamp": 1747040909238
+      "durationMs": 0.019794464111328125,
+      "timestamp": 1747045634649
     },
     {
       "label": "ranking",
-      "durationMs": 0.026475906372070312,
-      "timestamp": 1747040909874
+      "durationMs": 0.017242431640625,
+      "timestamp": 1747045634862
     },
     {
       "label": "ranking",
-      "durationMs": 0.010639190673828125,
-      "timestamp": 1747040909874
+      "durationMs": 0.010135650634765625,
+      "timestamp": 1747045634862
     },
     {
       "label": "ranking",
-      "durationMs": 0.009778976440429688,
-      "timestamp": 1747040909874
+      "durationMs": 0.01043701171875,
+      "timestamp": 1747045634862
     },
     {
       "label": "ranking",
-      "durationMs": 0.010522842407226562,
-      "timestamp": 1747040909874
+      "durationMs": 0.00855255126953125,
+      "timestamp": 1747045634862
     },
     {
       "label": "ranking",
-      "durationMs": 0.01036834716796875,
-      "timestamp": 1747040909874
+      "durationMs": 0.009775161743164062,
+      "timestamp": 1747045634862
     },
     {
       "label": "ranking",
-      "durationMs": 0.008859634399414062,
-      "timestamp": 1747040909874
+      "durationMs": 0.008747100830078125,
+      "timestamp": 1747045634862
     },
     {
       "label": "ranking",
-      "durationMs": 0.00879669189453125,
-      "timestamp": 1747040909874
+      "durationMs": 0.00832366943359375,
+      "timestamp": 1747045634863
     },
     {
       "label": "ranking",
-      "durationMs": 0.009710311889648438,
-      "timestamp": 1747040909874
+      "durationMs": 0.008371353149414062,
+      "timestamp": 1747045634863
     },
     {
       "label": "ranking",
-      "durationMs": 0.016584396362304688,
-      "timestamp": 1747040909875
+      "durationMs": 0.012783050537109375,
+      "timestamp": 1747045634863
     },
     {
       "label": "ranking",
-      "durationMs": 0.011678695678710938,
-      "timestamp": 1747040909875
+      "durationMs": 0.017095565795898438,
+      "timestamp": 1747045635088
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.018144607543945312,
+      "timestamp": 1747045635346
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010869979858398438,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011137008666992188,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009586334228515625,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01068115234375,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00954437255859375,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010938644409179688,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009611129760742188,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009698867797851562,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.017965316772460938,
+      "timestamp": 1747045635607
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016431808471679688,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012155532836914062,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010057449340820312,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01093292236328125,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009716033935546875,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01113128662109375,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009504318237304688,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010776519775390625,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009565353393554688,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016788482666015625,
+      "timestamp": 1747045636175
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.019159317016601562,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010610580444335938,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009836196899414062,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010707855224609375,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0095672607421875,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011602401733398438,
+      "timestamp": 1747045636396
     },
     {
       "label": "ranking",
       "durationMs": 0.009799957275390625,
-      "timestamp": 1747040909875
+      "timestamp": 1747045636396
     },
     {
       "label": "ranking",
-      "durationMs": 0.009973526000976562,
-      "timestamp": 1747040909875
+      "durationMs": 0.011041641235351562,
+      "timestamp": 1747045636397
     },
     {
       "label": "ranking",
-      "durationMs": 0.01268768310546875,
-      "timestamp": 1747040909875
+      "durationMs": 0.009693145751953125,
+      "timestamp": 1747045636397
     },
     {
       "label": "ranking",
-      "durationMs": 0.010644912719726562,
-      "timestamp": 1747040909875
+      "durationMs": 0.016933441162109375,
+      "timestamp": 1747045637000
     },
     {
       "label": "ranking",
-      "durationMs": 0.010194778442382812,
-      "timestamp": 1747040909875
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.011278152465820312,
-      "timestamp": 1747040909875
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.009763717651367188,
-      "timestamp": 1747040909876
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.009706497192382812,
-      "timestamp": 1747040909876
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.011323928833007812,
-      "timestamp": 1747040909876
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.009511947631835938,
-      "timestamp": 1747040909876
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.010690689086914062,
-      "timestamp": 1747040909876
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.010526657104492188,
-      "timestamp": 1747040909876
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.009761810302734375,
-      "timestamp": 1747040909876
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.01245880126953125,
-      "timestamp": 1747040909877
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.009626388549804688,
-      "timestamp": 1747040909877
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.009450912475585938,
-      "timestamp": 1747040909877
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.010614395141601562,
-      "timestamp": 1747040909877
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.011060714721679688,
-      "timestamp": 1747040909877
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.010051727294921875,
-      "timestamp": 1747040909877
+      "durationMs": 0.01779937744140625,
+      "timestamp": 1747045637214
     },
     {
       "label": "ranking",
       "durationMs": 0.011075973510742188,
-      "timestamp": 1747040909877
+      "timestamp": 1747045637214
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009935379028320312,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009525299072265625,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009515762329101562,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009378433227539062,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009428024291992188,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00963592529296875,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009490966796875,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.018274307250976562,
+      "timestamp": 1747045637422
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01700592041015625,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012044906616210938,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009830474853515625,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011205673217773438,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00960540771484375,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010669708251953125,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009611129760742188,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010622024536132812,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00991058349609375,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.018484115600585938,
+      "timestamp": 1747045637847
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.017917633056640625,
+      "timestamp": 1747045638073
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010656356811523438,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010990142822265625,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00962066650390625,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010578155517578125,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009553909301757812,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009550094604492188,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0093994140625,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011095046997070312,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016391754150390625,
+      "timestamp": 1747045638368
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016252517700195312,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010362625122070312,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009740829467773438,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009485244750976562,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009487152099609375,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009603500366210938,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009471893310546875,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009572982788085938,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01131439208984375,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016849517822265625,
+      "timestamp": 1747045638791
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0161590576171875,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010457992553710938,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009847640991210938,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00960540771484375,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009622573852539062,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009601593017578125,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009584426879882812,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009765625,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009534835815429688,
+      "timestamp": 1747045639004
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.017124176025390625,
+      "timestamp": 1747045639228
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016780853271484375,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012697219848632812,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009763717651367188,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0113677978515625,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009639739990234375,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0113067626953125,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0098419189453125,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011335372924804688,
+      "timestamp": 1747045639431
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00960540771484375,
+      "timestamp": 1747045639431
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01668548583984375,
+      "timestamp": 1747045639640
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.018899917602539062,
+      "timestamp": 1747045639845
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010667800903320312,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011758804321289062,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009693145751953125,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011548995971679688,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0095977783203125,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0111541748046875,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009508132934570312,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011278152465820312,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01831817626953125,
+      "timestamp": 1747045640467
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016986846923828125,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.013158798217773438,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009855270385742188,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011751174926757812,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009740829467773438,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011249542236328125,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009725570678710938,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0114898681640625,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00957489013671875,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016389846801757812,
+      "timestamp": 1747045640895
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.018362045288085938,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010923385620117188,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011707305908203125,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009792327880859375,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011552810668945312,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0099334716796875,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011449813842773438,
+      "timestamp": 1747045641119
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009792327880859375,
+      "timestamp": 1747045641119
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011501312255859375,
+      "timestamp": 1747045641119
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01906585693359375,
+      "timestamp": 1747045641355
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.019771575927734375,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011272430419921875,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009817123413085938,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01016998291015625,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009527206420898438,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.035556793212890625,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010833740234375,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00963592529296875,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009634017944335938,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.018457412719726562,
+      "timestamp": 1747045641778
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.020330429077148438,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.014173507690429688,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010019302368164062,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01155853271484375,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00988006591796875,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.013311386108398438,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009746551513671875,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011339187622070312,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012134552001953125,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01739501953125,
+      "timestamp": 1747045642224
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016994476318359375,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012872695922851562,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010221481323242188,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011766433715820312,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0098724365234375,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01259613037109375,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009881973266601562,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011537551879882812,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0097198486328125,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0165557861328125,
+      "timestamp": 1747045642657
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01941680908203125,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01104736328125,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011457443237304688,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009807586669921875,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011293411254882812,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00975799560546875,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011175155639648438,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009698867797851562,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0120697021484375,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.017974853515625,
+      "timestamp": 1747045643087
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016796112060546875,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010753631591796875,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009792327880859375,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009563446044921875,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009546279907226562,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00951385498046875,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009613037109375,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00945281982421875,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009561538696289062,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.017480850219726562,
+      "timestamp": 1747045643514
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.017871856689453125,
+      "timestamp": 1747045643719
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010618209838867188,
+      "timestamp": 1747045643719
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010211944580078125,
+      "timestamp": 1747045643719
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009557723999023438,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009706497192382812,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009515762329101562,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0094757080078125,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009561538696289062,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009561538696289062,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016534805297851562,
+      "timestamp": 1747045643928
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016368865966796875,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01055145263671875,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00978851318359375,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009601593017578125,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009632110595703125,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009630203247070312,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009572982788085938,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009809494018554688,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009593963623046875,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016576766967773438,
+      "timestamp": 1747045644339
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016399383544921875,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010568618774414062,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009899139404296875,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009401321411132812,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009531021118164062,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009500503540039062,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009634017944335938,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009553909301757812,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009561538696289062,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0187225341796875,
+      "timestamp": 1747045644772
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.021087646484375,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011968612670898438,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009876251220703125,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009490966796875,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009532928466796875,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009450912475585938,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009517669677734375,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009458541870117188,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009420394897460938,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016252517700195312,
+      "timestamp": 1747045645277
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016466140747070312,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010625839233398438,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009710311889648438,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0095367431640625,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009656906127929688,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0111083984375,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009546279907226562,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00948333740234375,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009519577026367188,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01605987548828125,
+      "timestamp": 1747045645716
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01602935791015625,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0105743408203125,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009807586669921875,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009656906127929688,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.00948333740234375,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01079559326171875,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009935379028320312,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009557723999023438,
+      "timestamp": 1747045645925
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009733200073242188,
+      "timestamp": 1747045645925
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016643524169921875,
+      "timestamp": 1747045646129
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.015895843505859375,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0102996826171875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011016845703125,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009649276733398438,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009490966796875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009532928466796875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009490966796875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009532928466796875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0098419189453125,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.016916275024414062,
+      "timestamp": 1747045646941
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0165252685546875,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012430191040039062,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010618209838867188,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0096588134765625,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009569168090820312,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009586334228515625,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.1826496124267578,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010641098022460938,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.009630203247070312,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0246734619140625,
+      "timestamp": 1747045647356
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.021413803100585938,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012664794921875,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011083602905273438,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010517120361328125,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010557174682617188,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01038360595703125,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010339736938476562,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010301589965820312,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0104522705078125,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.028865814208984375,
+      "timestamp": 1747045647789
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.0208740234375,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.012487411499023438,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010843276977539062,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01216888427734375,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010549545288085938,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010345458984375,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010629653930664062,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010580062866210938,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010385513305664062,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.024410247802734375,
+      "timestamp": 1747045648200
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.02178955078125,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01451873779296875,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.011341094970703125,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.01259613037109375,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.010671615600585938,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "ranking",
+      "durationMs": 0.013057708740234375,
+      "timestamp": 1747045648423
     },
     {
       "label": "ranking",
       "durationMs": 0.010593414306640625,
-      "timestamp": 1747040909877
+      "timestamp": 1747045648423
     },
     {
       "label": "ranking",
-      "durationMs": 0.009466171264648438,
-      "timestamp": 1747040909877
-    },
-    {
-      "label": "ranking",
-      "durationMs": 0.009840011596679688,
-      "timestamp": 1747040909877
+      "durationMs": 0.012182235717773438,
+      "timestamp": 1747045648423
     }
   ],
   "postingTiming": [
     {
       "label": "posting",
-      "durationMs": 1468.9509544372559,
-      "timestamp": 1747040908125
+      "durationMs": 556.0715656280518,
+      "timestamp": 1747045633785
     },
     {
       "label": "posting",
-      "durationMs": 610.2700328826904,
-      "timestamp": 1747040908736
+      "durationMs": 248.20972061157227,
+      "timestamp": 1747045634033
     },
     {
       "label": "posting",
-      "durationMs": 500.6190776824951,
-      "timestamp": 1747040909238
+      "durationMs": 614.1843662261963,
+      "timestamp": 1747045634649
     },
     {
       "label": "posting",
-      "durationMs": 635.1736812591553,
-      "timestamp": 1747040909873
+      "durationMs": 213.19244384765625,
+      "timestamp": 1747045634862
+    },
+    {
+      "label": "posting",
+      "durationMs": 224.82279014587402,
+      "timestamp": 1747045635088
+    },
+    {
+      "label": "posting",
+      "durationMs": 258.7528305053711,
+      "timestamp": 1747045635346
+    },
+    {
+      "label": "posting",
+      "durationMs": 259.95798683166504,
+      "timestamp": 1747045635607
+    },
+    {
+      "label": "posting",
+      "durationMs": 223.70736503601074,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "posting",
+      "durationMs": 343.4400863647461,
+      "timestamp": 1747045636175
+    },
+    {
+      "label": "posting",
+      "durationMs": 221.4139747619629,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "posting",
+      "durationMs": 603.5343761444092,
+      "timestamp": 1747045637000
+    },
+    {
+      "label": "posting",
+      "durationMs": 214.09667587280273,
+      "timestamp": 1747045637214
+    },
+    {
+      "label": "posting",
+      "durationMs": 207.0324306488037,
+      "timestamp": 1747045637422
+    },
+    {
+      "label": "posting",
+      "durationMs": 207.90444946289062,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "posting",
+      "durationMs": 216.90601348876953,
+      "timestamp": 1747045637847
+    },
+    {
+      "label": "posting",
+      "durationMs": 226.08827590942383,
+      "timestamp": 1747045638073
+    },
+    {
+      "label": "posting",
+      "durationMs": 294.4320583343506,
+      "timestamp": 1747045638368
+    },
+    {
+      "label": "posting",
+      "durationMs": 219.29701042175293,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "posting",
+      "durationMs": 203.22310066223145,
+      "timestamp": 1747045638791
+    },
+    {
+      "label": "posting",
+      "durationMs": 211.5459690093994,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "posting",
+      "durationMs": 224.8693618774414,
+      "timestamp": 1747045639228
+    },
+    {
+      "label": "posting",
+      "durationMs": 201.58110427856445,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "posting",
+      "durationMs": 208.88894653320312,
+      "timestamp": 1747045639639
+    },
+    {
+      "label": "posting",
+      "durationMs": 205.8349094390869,
+      "timestamp": 1747045639845
+    },
+    {
+      "label": "posting",
+      "durationMs": 620.8438606262207,
+      "timestamp": 1747045640467
+    },
+    {
+      "label": "posting",
+      "durationMs": 222.69534873962402,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "posting",
+      "durationMs": 204.39237594604492,
+      "timestamp": 1747045640894
+    },
+    {
+      "label": "posting",
+      "durationMs": 223.5666332244873,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "posting",
+      "durationMs": 235.9067268371582,
+      "timestamp": 1747045641355
+    },
+    {
+      "label": "posting",
+      "durationMs": 201.60425186157227,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "posting",
+      "durationMs": 220.74378204345703,
+      "timestamp": 1747045641777
+    },
+    {
+      "label": "posting",
+      "durationMs": 222.04303169250488,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "posting",
+      "durationMs": 223.51286125183105,
+      "timestamp": 1747045642224
+    },
+    {
+      "label": "posting",
+      "durationMs": 226.75427436828613,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "posting",
+      "durationMs": 206.19133186340332,
+      "timestamp": 1747045642657
+    },
+    {
+      "label": "posting",
+      "durationMs": 204.6310214996338,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "posting",
+      "durationMs": 224.6808319091797,
+      "timestamp": 1747045643087
+    },
+    {
+      "label": "posting",
+      "durationMs": 205.5355625152588,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "posting",
+      "durationMs": 220.69798278808594,
+      "timestamp": 1747045643514
+    },
+    {
+      "label": "posting",
+      "durationMs": 205.25103950500488,
+      "timestamp": 1747045643719
+    },
+    {
+      "label": "posting",
+      "durationMs": 208.22990036010742,
+      "timestamp": 1747045643928
+    },
+    {
+      "label": "posting",
+      "durationMs": 201.8822898864746,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "posting",
+      "durationMs": 208.4430389404297,
+      "timestamp": 1747045644339
+    },
+    {
+      "label": "posting",
+      "durationMs": 207.618257522583,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "posting",
+      "durationMs": 225.27765655517578,
+      "timestamp": 1747045644772
+    },
+    {
+      "label": "posting",
+      "durationMs": 230.2708034515381,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "posting",
+      "durationMs": 273.4694538116455,
+      "timestamp": 1747045645277
+    },
+    {
+      "label": "posting",
+      "durationMs": 229.86067390441895,
+      "timestamp": 1747045645506
+    },
+    {
+      "label": "posting",
+      "durationMs": 208.51914024353027,
+      "timestamp": 1747045645716
+    },
+    {
+      "label": "posting",
+      "durationMs": 208.47310829162598,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "posting",
+      "durationMs": 203.927095413208,
+      "timestamp": 1747045646128
+    },
+    {
+      "label": "posting",
+      "durationMs": 214.45015716552734,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "posting",
+      "durationMs": 597.1296253204346,
+      "timestamp": 1747045646941
+    },
+    {
+      "label": "posting",
+      "durationMs": 210.54747200012207,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "posting",
+      "durationMs": 203.97673416137695,
+      "timestamp": 1747045647356
+    },
+    {
+      "label": "posting",
+      "durationMs": 231.86180877685547,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "posting",
+      "durationMs": 201.03859901428223,
+      "timestamp": 1747045647789
+    },
+    {
+      "label": "posting",
+      "durationMs": 204.10629653930664,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "posting",
+      "durationMs": 205.78890419006348,
+      "timestamp": 1747045648200
+    },
+    {
+      "label": "posting",
+      "durationMs": 223.0144443511963,
+      "timestamp": 1747045648423
     }
   ],
   "commentingTiming": [
     {
       "label": "commenting",
-      "durationMs": 0.20313262939453125,
-      "timestamp": 1747040908736
+      "durationMs": 0.10622978210449219,
+      "timestamp": 1747045634034
     },
     {
       "label": "commenting",
-      "durationMs": 0.05303955078125,
-      "timestamp": 1747040908736
+      "durationMs": 0.003238677978515625,
+      "timestamp": 1747045634034
     },
     {
       "label": "commenting",
-      "durationMs": 0.0519561767578125,
-      "timestamp": 1747040908737
+      "durationMs": 0.001567840576171875,
+      "timestamp": 1747045634034
     },
     {
       "label": "commenting",
-      "durationMs": 0.06278228759765625,
-      "timestamp": 1747040909874
+      "durationMs": 0.0019378662109375,
+      "timestamp": 1747045634862
     },
     {
       "label": "commenting",
-      "durationMs": 0.05190467834472656,
-      "timestamp": 1747040909874
+      "durationMs": 0.00133514404296875,
+      "timestamp": 1747045634862
     },
     {
       "label": "commenting",
-      "durationMs": 0.05868339538574219,
-      "timestamp": 1747040909874
+      "durationMs": 0.001079559326171875,
+      "timestamp": 1747045634862
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00212860107421875,
+      "timestamp": 1747045635346
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0040454864501953125,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001178741455078125,
+      "timestamp": 1747045635347
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0022106170654296875,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.003452301025390625,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0015926361083984375,
+      "timestamp": 1747045635831
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00182342529296875,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0010852813720703125,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0021800994873046875,
+      "timestamp": 1747045636396
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0020389556884765625,
+      "timestamp": 1747045637214
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0012912750244140625,
+      "timestamp": 1747045637214
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0010242462158203125,
+      "timestamp": 1747045637215
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.003387451171875,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001186370849609375,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0023174285888671875,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.002361297607421875,
+      "timestamp": 1747045638073
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0012111663818359375,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0010738372802734375,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0021839141845703125,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00122833251953125,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0010738372802734375,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.002166748046875,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0029811859130859375,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011081695556640625,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.011209487915039062,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00124359130859375,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.002735137939453125,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0022640228271484375,
+      "timestamp": 1747045639845
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0033321380615234375,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0010509490966796875,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.003879547119140625,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0012226104736328125,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0027561187744140625,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0021724700927734375,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0029506683349609375,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0010662078857421875,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.002559661865234375,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00133514404296875,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00110626220703125,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0026264190673828125,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0013065338134765625,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011196136474609375,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0038299560546875,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001239776611328125,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00243377685546875,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.002079010009765625,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0029125213623046875,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00112152099609375,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.002216339111328125,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0012073516845703125,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00107574462890625,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00251007080078125,
+      "timestamp": 1747045643719
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011920928955078125,
+      "timestamp": 1747045643719
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.00106048583984375,
+      "timestamp": 1747045643719
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.002288818359375,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011730194091796875,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011157989501953125,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0023593902587890625,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0012149810791015625,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001087188720703125,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0023250579833984375,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0012950897216796875,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001064300537109375,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0023651123046875,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001171112060546875,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001239776611328125,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0023670196533203125,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011501312255859375,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011615753173828125,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0023651123046875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011882781982421875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.001087188720703125,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0058746337890625,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0041217803955078125,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011444091796875,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0024242401123046875,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011539459228515625,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0011310577392578125,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0016307830810546875,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0009212493896484375,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0007648468017578125,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0016021728515625,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.000904083251953125,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "commenting",
+      "durationMs": 0.0008792877197265625,
+      "timestamp": 1747045648423
     }
   ],
   "likingTiming": [
     {
       "label": "liking",
-      "durationMs": 0.14045143127441406,
-      "timestamp": 1747040908737
+      "durationMs": 0.07547760009765625,
+      "timestamp": 1747045634034
     },
     {
       "label": "liking",
-      "durationMs": 0.05977058410644531,
-      "timestamp": 1747040908737
+      "durationMs": 0.009731292724609375,
+      "timestamp": 1747045634034
     },
     {
       "label": "liking",
-      "durationMs": 0.04370880126953125,
-      "timestamp": 1747040908737
+      "durationMs": 0.00131988525390625,
+      "timestamp": 1747045634034
     },
     {
       "label": "liking",
-      "durationMs": 0.044750213623046875,
-      "timestamp": 1747040909874
+      "durationMs": 0.00147247314453125,
+      "timestamp": 1747045634862
     },
     {
       "label": "liking",
-      "durationMs": 0.04186820983886719,
-      "timestamp": 1747040909874
+      "durationMs": 0.0010242462158203125,
+      "timestamp": 1747045634862
     },
     {
       "label": "liking",
-      "durationMs": 0.04125785827636719,
-      "timestamp": 1747040909874
+      "durationMs": 0.0011157989501953125,
+      "timestamp": 1747045634862
     },
     {
       "label": "liking",
-      "durationMs": 0.04686927795410156,
-      "timestamp": 1747040909875
+      "durationMs": 0.001438140869140625,
+      "timestamp": 1747045635347
     },
     {
       "label": "liking",
-      "durationMs": 0.042324066162109375,
-      "timestamp": 1747040909875
+      "durationMs": 0.001018524169921875,
+      "timestamp": 1747045635347
     },
     {
       "label": "liking",
-      "durationMs": 0.04329490661621094,
-      "timestamp": 1747040909875
+      "durationMs": 0.0009860992431640625,
+      "timestamp": 1747045635347
     },
     {
       "label": "liking",
-      "durationMs": 0.05375480651855469,
-      "timestamp": 1747040909875
+      "durationMs": 0.0014820098876953125,
+      "timestamp": 1747045635831
     },
     {
       "label": "liking",
-      "durationMs": 0.04669189453125,
-      "timestamp": 1747040909875
+      "durationMs": 0.00235748291015625,
+      "timestamp": 1747045635831
     },
     {
       "label": "liking",
-      "durationMs": 0.03865242004394531,
-      "timestamp": 1747040909876
+      "durationMs": 0.0012226104736328125,
+      "timestamp": 1747045635831
     },
     {
       "label": "liking",
-      "durationMs": 0.03692817687988281,
-      "timestamp": 1747040909876
+      "durationMs": 0.0013427734375,
+      "timestamp": 1747045636396
     },
     {
       "label": "liking",
-      "durationMs": 0.0370330810546875,
-      "timestamp": 1747040909876
+      "durationMs": 0.00211334228515625,
+      "timestamp": 1747045636396
     },
     {
       "label": "liking",
-      "durationMs": 0.036563873291015625,
-      "timestamp": 1747040909876
+      "durationMs": 0.001079559326171875,
+      "timestamp": 1747045636396
     },
     {
       "label": "liking",
-      "durationMs": 0.03647422790527344,
-      "timestamp": 1747040909877
+      "durationMs": 0.0013904571533203125,
+      "timestamp": 1747045637215
     },
     {
       "label": "liking",
-      "durationMs": 0.0355224609375,
-      "timestamp": 1747040909877
+      "durationMs": 0.00095367431640625,
+      "timestamp": 1747045637215
     },
     {
       "label": "liking",
-      "durationMs": 0.03689384460449219,
-      "timestamp": 1747040909877
+      "durationMs": 0.0009326934814453125,
+      "timestamp": 1747045637215
     },
     {
       "label": "liking",
-      "durationMs": 0.0382080078125,
-      "timestamp": 1747040909877
+      "durationMs": 0.001415252685546875,
+      "timestamp": 1747045637630
     },
     {
       "label": "liking",
-      "durationMs": 0.03681373596191406,
-      "timestamp": 1747040909877
+      "durationMs": 0.0021991729736328125,
+      "timestamp": 1747045637630
     },
     {
       "label": "liking",
-      "durationMs": 0.03803443908691406,
-      "timestamp": 1747040909877
+      "durationMs": 0.001007080078125,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00139617919921875,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001026153564453125,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001068115234375,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001354217529296875,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00098419189453125,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0009784698486328125,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0014190673828125,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001018524169921875,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0013446807861328125,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00130462646484375,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.003238677978515625,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0009613037109375,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.003147125244140625,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0010776519775390625,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0028362274169921875,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0013904571533203125,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0024623870849609375,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0010204315185546875,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.011447906494140625,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0010833740234375,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0037288665771484375,
+      "timestamp": 1747045641118
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0015850067138671875,
+      "timestamp": 1747045641556
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00099945068359375,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001392364501953125,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0029735565185546875,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0012607574462890625,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0027980804443359375,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0014171600341796875,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0025920867919921875,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001071929931640625,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0030841827392578125,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001064300537109375,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0010471343994140625,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0014801025390625,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0009918212890625,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0010223388671875,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0013484954833984375,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00103759765625,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0010242462158203125,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0012493133544921875,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001056671142578125,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.000980377197265625,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0012874603271484375,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00098419189453125,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001007080078125,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001300811767578125,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001010894775390625,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.000988006591796875,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00141143798828125,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.05326652526855469,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0031585693359375,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0012989044189453125,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0008087158203125,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.000804901123046875,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0013561248779296875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0009059906005859375,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0010204315185546875,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0012302398681640625,
+      "timestamp": 1747045647151
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.000885009765625,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0008144378662109375,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00116729736328125,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0008087158203125,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00081634521484375,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0011730194091796875,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.000823974609375,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.000774383544921875,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.001392364501953125,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.0024261474609375,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "liking",
+      "durationMs": 0.00079345703125,
+      "timestamp": 1747045648423
     }
   ],
   "dislikingTiming": [
     {
       "label": "disliking",
-      "durationMs": 0.13454437255859375,
-      "timestamp": 1747040908737
+      "durationMs": 0.08008575439453125,
+      "timestamp": 1747045634034
     },
     {
       "label": "disliking",
-      "durationMs": 0.045558929443359375,
-      "timestamp": 1747040908737
+      "durationMs": 0.00255584716796875,
+      "timestamp": 1747045634035
     },
     {
       "label": "disliking",
-      "durationMs": 0.042789459228515625,
-      "timestamp": 1747040909874
+      "durationMs": 0.002216339111328125,
+      "timestamp": 1747045634863
     },
     {
       "label": "disliking",
-      "durationMs": 0.0411376953125,
-      "timestamp": 1747040909874
+      "durationMs": 0.0010509490966796875,
+      "timestamp": 1747045634863
     },
     {
       "label": "disliking",
-      "durationMs": 0.077728271484375,
-      "timestamp": 1747040909875
+      "durationMs": 0.0032806396484375,
+      "timestamp": 1747045635347
     },
     {
       "label": "disliking",
-      "durationMs": 0.04365348815917969,
-      "timestamp": 1747040909875
+      "durationMs": 0.00102996826171875,
+      "timestamp": 1747045635347
     },
     {
       "label": "disliking",
-      "durationMs": 0.04298973083496094,
-      "timestamp": 1747040909876
+      "durationMs": 0.001262664794921875,
+      "timestamp": 1747045635831
     },
     {
       "label": "disliking",
-      "durationMs": 0.04438018798828125,
-      "timestamp": 1747040909876
+      "durationMs": 0.0010585784912109375,
+      "timestamp": 1747045635831
     },
     {
       "label": "disliking",
-      "durationMs": 0.04638099670410156,
-      "timestamp": 1747040909876
+      "durationMs": 0.0029621124267578125,
+      "timestamp": 1747045636396
     },
     {
       "label": "disliking",
-      "durationMs": 0.05489349365234375,
-      "timestamp": 1747040909876
+      "durationMs": 0.001285552978515625,
+      "timestamp": 1747045636397
     },
     {
       "label": "disliking",
-      "durationMs": 0.0435333251953125,
-      "timestamp": 1747040909877
+      "durationMs": 0.003849029541015625,
+      "timestamp": 1747045637215
     },
     {
       "label": "disliking",
-      "durationMs": 0.03692817687988281,
-      "timestamp": 1747040909877
+      "durationMs": 0.001399993896484375,
+      "timestamp": 1747045637215
     },
     {
       "label": "disliking",
-      "durationMs": 0.03686332702636719,
-      "timestamp": 1747040909877
+      "durationMs": 0.002368927001953125,
+      "timestamp": 1747045637630
     },
     {
       "label": "disliking",
-      "durationMs": 0.03877830505371094,
-      "timestamp": 1747040909878
+      "durationMs": 0.001102447509765625,
+      "timestamp": 1747045637630
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0013446807861328125,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010700225830078125,
+      "timestamp": 1747045638074
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0014133453369140625,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001003265380859375,
+      "timestamp": 1747045638588
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0013885498046875,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001476287841796875,
+      "timestamp": 1747045639003
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.00293731689453125,
+      "timestamp": 1747045639430
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001033782958984375,
+      "timestamp": 1747045639431
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001293182373046875,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0028667449951171875,
+      "timestamp": 1747045639846
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0012969970703125,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.00103759765625,
+      "timestamp": 1747045640690
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0012645721435546875,
+      "timestamp": 1747045641119
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.00279998779296875,
+      "timestamp": 1747045641119
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0013523101806640625,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0011157989501953125,
+      "timestamp": 1747045641557
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0014171600341796875,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0025691986083984375,
+      "timestamp": 1747045642000
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.00308990478515625,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010700225830078125,
+      "timestamp": 1747045642451
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001255035400390625,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010356903076171875,
+      "timestamp": 1747045642862
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0016460418701171875,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010528564453125,
+      "timestamp": 1747045643293
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0016727447509765625,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0009918212890625,
+      "timestamp": 1747045643720
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0013484954833984375,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010623931884765625,
+      "timestamp": 1747045644130
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0012493133544921875,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010395050048828125,
+      "timestamp": 1747045644547
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001312255859375,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0011577606201171875,
+      "timestamp": 1747045645003
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0014495849609375,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001056671142578125,
+      "timestamp": 1747045645507
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0018444061279296875,
+      "timestamp": 1747045645924
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001071929931640625,
+      "timestamp": 1747045645925
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.00142669677734375,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010528564453125,
+      "timestamp": 1747045646343
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0021572113037109375,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0011196136474609375,
+      "timestamp": 1747045647152
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0015583038330078125,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0009403228759765625,
+      "timestamp": 1747045647588
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0022525787353515625,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0010051727294921875,
+      "timestamp": 1747045647994
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.0041675567626953125,
+      "timestamp": 1747045648423
+    },
+    {
+      "label": "disliking",
+      "durationMs": 0.001056671142578125,
+      "timestamp": 1747045648423
     }
   ]
 }

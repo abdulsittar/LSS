@@ -111,7 +111,7 @@ async function generateSentimentGraph() {
       return;
     }
 
-    await saveSentimentGraph(sentimentScores, 'posts_sentiment_scores_chart.png');
+    await saveSentimentGraph(sentimentScores, 'Analysis/posts_sentiment_scores_chart.png');
     console.log('Sentiment graph saved successfully!');
   } catch (err) {
     console.error('Error saving sentiment graph:', err);
@@ -127,7 +127,7 @@ async function generateSentimentGraphComments() {
       return;
     }
 
-    await saveSentimentGraph(sentimentScores, 'comments_sentiment_scores_chart.png');
+    await saveSentimentGraph(sentimentScores, 'Analysis/comments_sentiment_scores_chart.png');
     console.log('Sentiment graph saved successfully!');
   } catch (err) {
     console.error('Error saving sentiment graph:', err);
@@ -170,11 +170,11 @@ function saveDataToJson() {
   fs.writeFileSync('simulation_data.json', JSON.stringify(data, null, 2), 'utf-8');
   console.log("Data saved to simulation_data.json");
   
-  saveTimingGraph('ranking', 'ranking_timing_chart.png');
-  saveTimingGraph('posting', 'posting_timing_chart.png');
-  saveTimingGraph('commenting', 'commenting_timing_chart.png');
-  saveTimingGraph('liking', 'liking_timing_chart.png');
-  saveTimingGraph('disliking', 'disliking_timing_chart.png');
+  saveTimingGraph('ranking', 'Analysis/ranking_timing_chart.png');
+  saveTimingGraph('posting', 'Analysis/posting_timing_chart.png');
+  saveTimingGraph('commenting', 'Analysis/commenting_timing_chart.png');
+  saveTimingGraph('liking', 'Analysis/liking_timing_chart.png');
+  saveTimingGraph('disliking', 'Analysis/disliking_timing_chart.png');
 
 
   generateSentimentGraph();
