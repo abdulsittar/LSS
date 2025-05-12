@@ -42,8 +42,8 @@ A Node.js application for running and analyzing large-scale social media simulat
 
 ### 💰 Cost Analysis Over Time
 
-![Posting](./Analysis/posting.png)
-![Commenting](./Analysis/commenting.png)
-![Liking](./Analysis/liking.png)
-![Disliking](./Analysis/disliking.png)
-![Ranking](./Analysis/ranking.png)
+![Posting](./Analysis/posting_timing_chart.png)
+![Commenting](./Analysis/commenting_timing_chart.png)
+![Liking](./Analysis/liking_timing_chart.png)
+![Disliking](./Analysis/disliking_timing_chart.png)
+![Ranking](./Analysis/ranking_timing_chart.png)
