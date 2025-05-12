@@ -1,0 +1,19 @@
+{
+  "name": "lss",
+  "version": "1.0.0",
+  "description": "Simulates social media user behavior in memory",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chartjs-node-canvas": "^5.0.0",
+    "dotenv": "^16.5.0",
+    "graphology": "^0.26.0",
+    "graphology-layout": "^0.6.1",
+    "together-ai": "^0.16.0"
+  }
+}
