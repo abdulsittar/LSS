@@ -1,5 +1,6 @@
 const { users, posts, comments, likes, dislikes } = require('../data/memoryStore.js');
 const { Together } = require('together-ai');
+const memoryStore = require("../data/memoryStore");
 
 require('dotenv').config();
 const { timedExecution, getInteractionsAgentOnPosts, getThreadAgentOnComments  } = require('../utils/helper');
@@ -105,34 +106,6 @@ async function generatePost(user) {
   }
 }
 
-async function generatePost2(user) {
-  const persona = `You are a neutral user on a political social platform.`;
-  const prompt = `${topic}\n${persona}\nResponse:`;
-
-  const response = {"role": "system"}//await tg.chat.completions.create({
-    //messages: [{ role: "system", content: persona }, { role: "user", content: prompt }],
-    //model: posting_model,
-  //});
-
-  const content = "dummy"//response.choices?.[0]?.message?.content?.trim();
-
-  if (content) {
-    posts.push({
-      id: generateId(),
-      userId: user.id,
-      content,
-      timestamp: Date.now(),
-    });
-    
-    user.timeBudget.total = Math.max(0, user.timeBudget.total - 20); // Deduct 10 but ensure it doesn't go below 0
-    user.timeBudget.used += 20;
-    
-    console.log(`Post created by ${user.username}:`, content); 
-    console.log(`Total time reduced to ${user.username}:`, user.timeBudget.total);
-    console.log(`used increased to ${user.username}:`, user.timeBudget.used);
-  }
-}
-
 async function commentOnPost(user) { 
     try {
       const persona = `You are a social media user with a politically neutral leaning. Respond to the following Tweet:`;
@@ -173,60 +146,148 @@ async function commentOnPost(user) {
   
       if (replyText) {
         await addAComment(user, replyText, user.id, post.id, user.username);
-      }
-      user.timeBudget.total = Math.max(0, user.timeBudget.total - 20); // Deduct 10 but ensure it doesn't go below 0
+        // Increase motivation for the post's owner (user who created the post)
+      const postOwner = memoryStore.users.find(u => u.id === post.userId);
+      if (postOwner) {
+        postOwner.motivation += 10;
+        console.log(`Increased motivation for ${postOwner.username} by 10. New motivation: ${postOwner.motivation}`);
+        
+        user.timeBudget.total = Math.max(0, user.timeBudget.total - 20); // Deduct 10 but ensure it doesn't go below 0
       user.timeBudget.used += 20;
 
         console.log(`${user.username} commented on post ${post.id}:`, replyText);
         console.log(`Total time reduced to ${user.username}:`, user.timeBudget.total);
         console.log(`used increased to ${user.username}:`, user.timeBudget.used);
-  
+        
+      }
+      }
     } catch (err) {
       console.error("❌ Error in agentReplyCommentLoop:", err);
       return null;
     }
   }
 
+async function likeAPost(user) {
+  try {
+  let sortedPosts = [...memoryStore.posts].sort((a, b) => b.rank - a.rank);
+    
+    if (sortedPosts.length === 0) {
+      console.warn("⚠️ No posts available for like.");
+      return null;
+    }
 
+    const post = sortedPosts[0]; // Top ranked post
 
-async function likePost(user) {
-  if (posts.length === 0) return;
+    // Get interactions (this is a placeholder for fetching interactions from memory)
+    const interactions = await getInteractionsAgentOnPosts(user);
 
-  const post = posts[Math.floor(Math.random() * posts.length)];
+    let persona = 'You are a social media user with a political neutral leaning. Reply only with "false" or "true"';
+    
+    let prompt = `Your native language is English. You are browsing Twitter. Decide whether to like this post based on your personality.\nPost: ${post.desc}`;
+    
+    if (interactions.length > 0) {
+      prompt += `\nYour recent interactions on the platform are as follows:\n${JSON.stringify(interactions, null, 2)}\n-----------------`;
+    }
+    prompt += `\nResponse:`;
 
-  likes.push({
-    type: 'like',
-    postId: post.id,
-    userId: user.id,
-    timestamp: Date.now(),
-  });
+    // Simulate decision-making logic
+    const randomNumber = Math.floor(Math.random() * 2);
+    let decision;
+    if (randomNumber === 0) {
+      decision = "true"; // Like the post
+    } else {
+      decision = "false"; // Do not like the post
+    }
 
-  user.timeBudget.total = Math.max(0, user.timeBudget.total - 5); // Deduct 10 but ensure it doesn't go below 0
-  user.timeBudget.used += 5;
-  
-  console.log(`${user.username} liked post ${post.id}`);
-  console.log(`Total time reduced to ${user.username}:`, user.timeBudget.total);
-  console.log(`used increased to ${user.username}:`, user.timeBudget.used);
+    console.log({ Like: decision });
+    console.log(`Like Decision: ${decision}`);
+
+    if (decision === "true") {
+      // If the agent likes the post, record the like (in-memory operation)
+      
+    likes.push({
+      id: generateId(),
+      userId: user.id,
+      postId: post.id,
+      type: "like"
+    });
+    
+    const postOwner = memoryStore.users.find(u => u.id === post.userId);
+      if (postOwner) {
+        postOwner.motivation += 5;
+        console.log(`Increased motivation for ${postOwner.username} by 10. New motivation: ${postOwner.motivation}`);
+      }
+    user.timeBudget.total = Math.max(0, user.timeBudget.total - 5); // Deduct 10 but ensure it doesn't go below 0
+    user.timeBudget.used += 5;
+      
+    } 
+  } catch (err) {
+    console.error("Error in agent_Like_Post_Loop:", err);
+  }
+  return null;
+
 }
 
-async function dislikePost(user) {
-  if (posts.length === 0) return;
 
-  const post = posts[Math.floor(Math.random() * posts.length)];
+async function dislikeAPost(user) {
+  try {
+  let sortedPosts = [...memoryStore.posts].sort((a, b) => b.rank - a.rank);
+    
+    if (sortedPosts.length === 0) {
+      console.warn("⚠️ No posts available for like.");
+      return null;
+    }
 
-  dislikes.push({
-    type: 'dislike',
-    postId: post.id,
-    userId: user.id,
-    timestamp: Date.now(),
-  });
-  
-  user.timeBudget.total = Math.max(0, user.timeBudget.total - 5); // Deduct 10 but ensure it doesn't go below 0
-  user.timeBudget.used += 5;
-  
-  console.log(`${user.username} disliked post ${post.id}`);
-  console.log(`Total time reduced to ${user.username}:`, user.timeBudget.total);
-  console.log(`used increased to ${user.username}:`, user.timeBudget.used);
+    const post = sortedPosts[0]; // Top ranked post
+
+    // Get interactions (this is a placeholder for fetching interactions from memory)
+    const interactions = await getInteractionsAgentOnPosts(user);
+
+    let persona = 'You are a social media user with a political neutral leaning. Reply only with "false" or "true"';
+    
+    let prompt = `Your native language is English. You are browsing Twitter. Decide whether to dislike this post based on your personality.\nPost: ${post.desc}`;
+    
+    if (interactions.length > 0) {
+      prompt += `\nYour recent interactions on the platform are as follows:\n${JSON.stringify(interactions, null, 2)}\n-----------------`;
+    }
+    prompt += `\nResponse:`;
+
+    // Simulate decision-making logic
+    const randomNumber = Math.floor(Math.random() * 2);
+    let decision;
+    if (randomNumber === 0) {
+      decision = "true"; // Like the post
+    } else {
+      decision = "false"; // Do not like the post
+    }
+
+    console.log({ Dislike: decision });
+    console.log(`Dislike Decision: ${decision}`);
+
+    if (decision === "true") {
+      // If the agent likes the post, record the like (in-memory operation)
+      
+    dislikes.push({
+      id: generateId(),
+      userId: user.id,
+      postId: post.id,
+      type: "dislike"
+    });
+    
+    const postOwner = memoryStore.users.find(u => u.id === post.userId);
+      if (postOwner) {
+        postOwner.motivation -= 5;
+        console.log(`Increased motivation for ${postOwner.username} by 10. New motivation: ${postOwner.motivation}`);
+      }
+    user.timeBudget.total = Math.max(0, user.timeBudget.total - 5); // Deduct 5 but ensure it doesn't go below 0
+    user.timeBudget.used += 5;
+      
+    } 
+  } catch (err) {
+    console.error("Error in agent_Like_Post_Loop:", err);
+  }
+  return null;
+
 }
 
 // Helper to generate unique IDs (simplified)
@@ -254,36 +315,6 @@ async function addAComment(user, desc, userId, postId, username) {
 
   if (!post.commentIds) post.commentIds = [];
   post.commentIds.push(comment.id);
-}
-
-async function likeAPost(user, postId) {
-  const post = posts.find(p => p.id === postId);
-  if (!post) return;
-
-  const existing = reactions.find(r => r.postId === postId && r.userId === user.id);
-  if (!existing) {
-    reactions.push({
-      id: generateId(),
-      userId: user.id,
-      postId,
-      type: "like"
-    });
-  }
-}
-
-async function dislikeAPost(user, postId) {
-  const post = posts.find(p => p.id === postId);
-  if (!post) return;
-
-  const existing = reactions.find(r => r.postId === postId && r.userId === user.id);
-  if (!existing) {
-    reactions.push({
-      id: generateId(),
-      userId: user.id,
-      postId,
-      type: "dislike"
-    });
-  }
 }
 
 async function toggleLikeDislikePost(user, postId) {
