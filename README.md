@@ -63,13 +63,10 @@ U_{\text{feedback}}(F) =
 $$
 
 Entertainment Utility (calculateEntertainmentUtility):
-$$
-U_{\text{entertainment}}(E) =
-\begin{cases}
-\log(1 + E) & \text{if } E \geq 0 \\
--\log(1 - E) & \text{if } E < 0
-\end{cases}
-$$
+U_entertainment(entertainment_score) = 
+    { log(1 + entertainment_score)  if  entertainment_score >= 0
+    { -log(1 - entertainment_score) if  entertainment_score < 0
+
 
 Total Utility (EUon) (calculateEUon):
 $$
