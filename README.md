@@ -27,6 +27,14 @@ A Node.js application for running and analyzing large-scale social media simulat
    npm install
    Create a .env file with your configuration (e.g., API keys):
    TOGETHER_API_KEY=your_key_here
+   TOPIC=topic_of_discussion_here
+   POSTING_MODEL=posting_model_name_at_together_ai
+   REPLYING_MODEL=replying_model_name_at_together_ai 
+
+   USERS=No_of_users
+   RANKER=your_ranker_here
+   ITERATIONS=Number_of_steps_here
+   
    npm start
 
 ## Equations

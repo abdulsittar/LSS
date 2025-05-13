@@ -6,7 +6,7 @@ const { timedExecution, getInteractionsAgentOnPosts, getThreadAgentOnComments  }
 
 const apiKey = process.env.TOGETHER_API_KEY;
 const topic = process.env.TOPIC;
-const posting_model = process.env.POSTING_MODEL;//"mistralai/Mistral-7B-Instruct-v0.2";  
+const posting_model = process.env.TESTING_MODEL;//process.env.POSTING_MODEL;//"mistralai/Mistral-7B-Instruct-v0.2";  
 const replying_model = process.env.REPLYING_MODEL;//"mistralai/Mistral-7B-Instruct-v0.2"; 
 
 const togetherClient = new Together({

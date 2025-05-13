@@ -31,8 +31,9 @@ function getAllUsers() {
   });
 }
 
+
 async function runSimulation() {
-  const numOfUsers = 10;
+  const numOfUsers = process.env.USERS;
   const userIds = [];
   const ranker = new Ranker();
 
@@ -47,7 +48,7 @@ async function runSimulation() {
   const [req, res] = simulateNetworkRequest(
     {
       userIds,
-      model: 'Barabasi',
+      model: process.env.NETWORK,
       numOfUsers,
       m: 2,
     },
@@ -62,7 +63,7 @@ async function runSimulation() {
   let users = getAllUsers();
   const totalUsers = users.length;
 
-  for (let j = 0; j < 30; j++) {
+  for (let j = 0; j < process.env.ITERATIONS; j++) {
     users = getAllUsers(); // refresh in case changed
     const group1Limit = Math.floor(totalUsers * 0.2);  // 20%
     const group2Limit = group1Limit + Math.floor(totalUsers * 0.3);  // 50%
