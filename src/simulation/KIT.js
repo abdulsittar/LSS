@@ -24,6 +24,56 @@ function simulateNetworkRequest(body, callback) {
   return [req, res];
 }
 
+
+// Optional: Probabilistic softmax-based choice
+function softmaxChoice(utilities, lambda = 1) {
+  const keys = Object.keys(utilities);
+  const exps = keys.map(k => Math.exp(lambda * utilities[k]));
+  const sum = exps.reduce((a, b) => a + b, 0);
+  const probs = exps.map(e => e / sum);
+
+  const r = Math.random();
+  let cumulative = 0;
+  for (let i = 0; i < probs.length; i++) {
+    cumulative += probs[i];
+    if (r < cumulative) return keys[i];
+  }
+
+  return keys[0]; // fallback
+}
+
+// Utility functions
+function timeUtility(used, budget, cost) {
+  const excess = used + cost - budget;
+  return -Math.log(1 + Math.exp(excess));
+}
+
+function feedbackUtility(score) {
+  return score >= 0 ? Math.log(1 + score) : -Math.log(1 - score);
+}
+
+function entertainmentUtility(score) {
+  return score >= 0 ? Math.log(1 + score) : -Math.log(1 - score);
+}
+
+// Utility calculator for each action
+function calculateActionUtility(action, user, context = {}) {
+  const { used, total } = user.timeBudget;
+  const weights = { time: 0.4, entertainment: 0.3, feedback: 0.3 };
+  const actionCosts = { post: 5, comment: 3, like: 1, dislike: 1 };
+  const cost = actionCosts[action] || 1;
+
+  const U_time = timeUtility(used, total, cost);
+  const U_ent = entertainmentUtility(context.entertainmentScore || 0);
+  const U_fb = feedbackUtility(context.feedbackScore || 0);
+
+  return (
+    weights.time * U_time +
+    weights.entertainment * U_ent +
+    weights.feedback * U_fb
+  );
+}
+
 function getAllUsers() {
   return memoryStore.users.map(user => {
     //user.logger = new SimpleLogger(); // Reattach logger
@@ -80,29 +130,42 @@ async function runSimulation() {
         await timedExecution('ranking', async () => {
           await ranker.fetchAndRankPosts();
         });
+        // Decision Logic: Calculate action utilities and decide on an action
         let actionType;
+        const actions = ["post", "comment", "like", "dislike"];
+        const utilities = {};
 
-        if (i < group1Limit) {
+        for (const action of actions) {
+          const context = {
+            entertainmentScore:
+              action === "post" ? currentUser.entertainmentScore : Math.random() * 2,
+            feedbackScore:
+              action === "post" ? currentUser.feedbackScore : Math.random() * 2,
+          };
+
+          utilities[action] = calculateActionUtility(action, currentUser, context);
+        }
+
+        // Optional: Probabilistic decision based on softmax
+        actionType = softmaxChoice(utilities, 1.2);  // You can use either `decideUserAction(currentUser)` or `softmaxChoice(utilities)`
+
+        // Mapping action types to the respective actions
+        if (actionType === "post") {
           actionType = 0; // post
-          
-        } else if (i < group2Limit) {
+        } else if (actionType === "comment") {
           actionType = 1; // comment
-          
-        } else if (i < group3Limit) {
+        } else if (actionType === "like") {
           actionType = 2; // like
-          
-        } else if (i < group4Limit) {
+        } else if (actionType === "dislike") {
           actionType = 3; // dislike
-          
         }
 
         await performUserAction(currentUser, actionType);
       }
     }
   }
-  
-  saveDataToJson();
 
+  saveDataToJson();
 }
 
 async function generateSentimentGraph() {
