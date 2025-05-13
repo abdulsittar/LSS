@@ -40,9 +40,9 @@ A Node.js application for running and analyzing large-scale social media simulat
 ## Equations
 
 Time Utility (calculateTimeUtility):
-$$
-U_{\text{time}}(t_{\text{spent}}, T_{\text{total}}) = - \left( \log\left( 1 + \exp(t_{\text{spent}} - T_{\text{total}}) \right) + 0.5 \cdot \text{penalty}(t_{\text{spent}}, T_{\text{total}}) \right)
-$$
+
+U_time(t_spent, T_total) = - ( log( 1 + exp(t_spent - T_total) ) + 0.5 * penalty(t_spent, T_total) )
+
 
 $$
 \text{penalty}(t_{\text{spent}}, T_{\text{total}}) = 
