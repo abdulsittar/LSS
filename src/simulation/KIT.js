@@ -33,7 +33,7 @@ function getAllUsers() {
 
 
 async function runSimulation() {
-  const numOfUsers = process.env.USERS;
+  const numOfUsers = parseInt(process.env.USERS, 10);
   const userIds = [];
   const ranker = new Ranker();
 
@@ -65,9 +65,11 @@ async function runSimulation() {
 
   for (let j = 0; j < process.env.ITERATIONS; j++) {
     users = getAllUsers(); // refresh in case changed
+    
     const group1Limit = Math.floor(totalUsers * 0.2);  // 20%
     const group2Limit = group1Limit + Math.floor(totalUsers * 0.3);  // 50%
     const group3Limit = group2Limit + Math.floor(totalUsers * 0.3);  // 80%
+    const group4Limit = group2Limit + Math.floor(totalUsers * 0.2);  // 80%
 
     for (let i = 0; i < totalUsers; i++) {
       const currentUser = users[i];
@@ -89,7 +91,7 @@ async function runSimulation() {
         } else if (i < group3Limit) {
           actionType = 2; // like
           
-        } else {
+        } else if (i < group4Limit) {
           actionType = 3; // dislike
           
         }
@@ -163,7 +165,8 @@ function saveDataToJson() {
     postingTiming: memoryStore.postingTiming,
     commentingTiming: memoryStore.commentingTiming,
     likingTiming: memoryStore.likingTiming,
-    dislikingTiming: memoryStore.dislikingTiming
+    dislikingTiming: memoryStore.dislikingTiming,
+    RankingResults: memoryStore.RankingResults
     // You can also include any other data here
   };
 

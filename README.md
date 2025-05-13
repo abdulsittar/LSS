@@ -39,6 +39,58 @@ A Node.js application for running and analyzing large-scale social media simulat
 
 ## Equations
 
+Time Utility (calculateTimeUtility):
+$$
+U_{\text{time}}(t_{\text{spent}}, T_{\text{total}}) = - \left( \log\left( 1 + \exp(t_{\text{spent}} - T_{\text{total}}) \right) + 0.5 \cdot \text{penalty}(t_{\text{spent}}, T_{\text{total}}) \right)
+$$
+
+$$
+\text{penalty}(t_{\text{spent}}, T_{\text{total}}) = 
+\begin{cases} 
+\log(1 + 0.5) & \text{if } t_{\text{spent}} > T_{\text{total}} \\
+0 & \text{if } t_{\text{spent}} \leq T_{\text{total}}
+\end{cases}
+$$
+
+Feedback Utility (calculateFeedbackUtility):
+
+$$
+U_{\text{feedback}}(F) =
+\begin{cases}
+\log(1 + F) & \text{if } F \geq 0 \\
+-\log(1 - F) & \text{if } F < 0
+\end{cases}
+$$
+
+Entertainment Utility (calculateEntertainmentUtility):
+$$
+U_{\text{entertainment}}(E) =
+\begin{cases}
+\log(1 + E) & \text{if } E \geq 0 \\
+-\log(1 - E) & \text{if } E < 0
+\end{cases}
+$$
+
+Total Utility (EUon) (calculateEUon):
+$$
+U_{\text{on}} = 0.4 \cdot U_{\text{time}}(t_{\text{spent}}, T_{\text{total}}) + 0.3 \cdot U_{\text{entertainment}}(E) + 0.3 \cdot U_{\text{feedback}}(F)
+$$
+
+
+Net Utility Difference (calculateNetUtilityDifference):
+$$
+\Delta U = U_{\text{on}} - U_{\text{off}} = U_{\text{on}} - 0
+$$
+
+Logon Probability (calculateLogonProbability):
+$$
+P_{\text{logon}} = \frac{1}{1 + \exp(-\text{sensitivity} \cdot \Delta U)}
+$$
+
+
+
+
+
 Time Budget (Ti):
 Ti = 100 - 20 * (number of posts) - 20 * (number of comments) - 5 * (number of likes + dislikes)
 

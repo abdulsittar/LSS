@@ -23,6 +23,8 @@ async function createNetwork(req, res) {
 
     if (userIds.length !== numOfUsers) {
       console.log("Mismatch between userIds and numOfUsers.");
+      console.log(userIds.length);
+      console.log(numOfUsers);
       return res.status(400).json({ message: "Mismatch between userIds and numOfUsers." });
     }
 
@@ -77,7 +79,7 @@ async function createNetwork(req, res) {
     }));
 
     fs.writeFileSync("Analysis/network.dot", exportToDOT(graph));
-    exec("dot -Tpng network.dot -o Analysis/network.png", (err) => {
+    exec("dot -Tpng Analysis/network.dot -o Analysis/network.png", (err) => {
       if (err) console.error("❌ Error generating PNG:", err);
       else console.log("✅ Graph saved as network.png");
     });

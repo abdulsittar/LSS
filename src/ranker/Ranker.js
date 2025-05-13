@@ -2,10 +2,10 @@ const { computePostFields } = require('./Ranking_Post');
 const { Decay } = require('./Decay');
 const { Engagement } = require('./Engagement');
 const { Noise } = require('./Noise');
-//const responseLogger = require('../utils/logs/logger');
+const { posts, comments, RankingResults } = require('../data/memoryStore');
 
 class Ranker {
-  constructor(logPath) {
+  constructor(logPath = null) {
     this.logPath = logPath;
   }
 
@@ -19,103 +19,6 @@ class Ranker {
       request: req,
       rankingMap,
     };
-  }
-
-
-  async fetchAndRankPosts() {
-    try {
-      const posts = await Post.find()
-        .populate('reposts')
-        .populate('likes')
-        .populate('dislikes')
-        .populate('comments')
-        .lean()
-        .exec();
-
-      //responseLogger.info("Ranked total posts", posts.length);
-      //responseLogger.info(posts.length);
-
-      // Process posts and map them to the Ranking_Post format
-        const items = posts.map((post) => {
-        const reposts = post.reposts.map((r) => r.createdAt);
-        const likes = post.likes.map((l) => l.createdAt);
-        const dislikes = post.dislikes.map((d) => d.createdAt);
-        const commentsTimestamp = post.comments.map((comment) => comment.createdAt ?? new Date());
-        const commentsLikes = post.comments.flatMap((comment) =>
-          Array.isArray(comment.likes)
-            ? comment.likes.map((like) => like.createdAt).filter((createdAt) => createdAt instanceof Date)
-            : []
-        );
-        const commentsDislikes = post.comments.flatMap((comment) =>
-          Array.isArray(comment.dislikes)
-            ? comment.dislikes.map((dislike) => dislike.createdAt).filter((createdAt) => createdAt instanceof Date)
-            : []
-        );
-
-        if (!post.createdAt) {
-          throw new Error('Post createdAt is undefined. Ensure this field is populated in your database.');
-        }
-
-        const timestamp = post.createdAt;
-        return {
-          id: post._id.toString(),
-          reposts,
-          likes,
-          dislikes,
-          timestamp,
-          comments: commentsTimestamp,
-          commentsLikes,
-          commentsDislikes,
-        };
-      });
-
-      // Define ranking parameters
-      const mode = 'count_based';  // Can be dynamically assigned
-      const rankingPayload = {
-        items,
-        weights: {
-          likes: 1.0,
-          dislikes: 1.0,
-          reposts: 1.0,
-          comments: 1.0,
-          commentsLikes: 1.0,
-          commentsDislikes: 1.0,
-        },
-        engagement: new Engagement('count_based', false),
-        noise: new Noise(0.6, 1.4),
-        decay: new Decay(0.2, 3 * 24 * 60 * 60), // Decay with 3 days in seconds
-        referenceDatetime: new Date(),
-        mode: mode, // Dynamically assigned, but still one of the allowed values
-      };
-
-      // Timing the ranking process
-      const response = this.rank(rankingPayload);
-
-      // Bulk update posts with their ranks
-      const bulkOps = [];
-      for (const [postId, rank] of Object.entries(response.rankingMap)) {
-        bulkOps.push({
-          updateOne: {
-            filter: { _id: postId },
-            update: { $set: { rank } },
-          },
-        });
-      }
-
-      if (bulkOps.length > 0) {
-        await Post.bulkWrite(bulkOps);
-      }
-
-      // Optional: Update individually if needed (can be removed if bulkWrite is enough)
-      // for (const [postId, rank] of Object.entries(response.rankingMap)) {
-      //   await Post.updateOne({ _id: postId }, { $set: { rank } });
-      // }
-
-    } catch (error) {
-      //responseLogger.info("Error fetching or ranking posts:", error);
-    } finally {
-      //responseLogger.info("Database connection closed.");
-    }
   }
 
   computePostScore(req, post) {
@@ -144,6 +47,75 @@ class Ranker {
         ? req.decay.calculate(post.timestamp, req.referenceDatetime) * observations.reduce((a, b) => a + b, 0)
         : observations.reduce((a, b) => a + b, 0))
     );
+  }
+
+  fetchAndRankPosts() {
+    try {
+      const referenceDatetime = new Date();
+
+      const items = posts.map((post) => {
+        const postComments = comments.filter((c) => c.postId === post.id);
+
+        const likes = (post.likes || []).map(() => referenceDatetime); // Simulated timestamp
+        const dislikes = (post.dislikes || []).map(() => referenceDatetime);
+
+        const reposts = (post.reposts || []).map((repostId) => {
+          const repost = posts.find((p) => p.id === repostId);
+          return repost?.createdAt || referenceDatetime;
+        });
+        
+        const commentsTimestamp = (postComments || []).map((c) => c.createdAt);
+        const commentsLikes = (postComments || []).flatMap((c) => (c.likes || []).map(() => referenceDatetime));
+        const commentsDislikes = (postComments || []).flatMap((c) => (c.dislikes || []).map(() => referenceDatetime));
+
+        const timestamp = post.createdAt;
+
+        return {
+          id: post.id,
+          //reposts,
+          likes,
+          dislikes,
+          timestamp,
+          comments: commentsTimestamp,
+          commentsLikes,
+          commentsDislikes,
+        };
+      });
+
+      const mode = process.env.RANKER || 'count_based';
+      const rankingPayload = {
+        items,
+        weights: {
+          likes: 1.0,
+          dislikes: 1.0,
+          reposts: 1.0,
+          comments: 1.0,
+          commentsLikes: 1.0,
+          commentsDislikes: 1.0,
+        },
+        engagement: new Engagement(mode, false),
+        noise: new Noise(0.6, 1.4),
+        decay: new Decay(0.2, 3 * 24 * 60 * 60), // 3 days in seconds
+        referenceDatetime,
+        mode,
+      };
+
+      const response = this.rank(rankingPayload);
+
+      // Apply rank back to in-memory posts
+      for (const [postId, rank] of Object.entries(response.rankingMap)) {
+        const post = posts.find((p) => p.id === postId);
+        if (post) {
+          post.rank = rank;
+        }
+      }
+
+      const rankingSnapshot = Object.entries(response.rankingMap).map(([id, rank]) => ({ postId: id, rank }));
+      RankingResults.push(rankingSnapshot);
+
+    } catch (error) {
+      console.error('Error in fetchAndRankPosts:', error);
+    }
   }
 }
 

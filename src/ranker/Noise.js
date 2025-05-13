@@ -13,3 +13,4 @@ class Noise {
     }
   }
   
+  module.exports = { Noise };

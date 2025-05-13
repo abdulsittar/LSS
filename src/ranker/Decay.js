@@ -10,3 +10,5 @@ class Decay {
     }
   }
   
+  module.exports = { Decay };
+  

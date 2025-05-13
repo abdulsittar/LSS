@@ -7,7 +7,7 @@ const { timedExecution, getInteractionsAgentOnPosts, getThreadAgentOnComments  }
 const apiKey = process.env.TOGETHER_API_KEY;
 const topic = process.env.TOPIC;
 const posting_model = process.env.TESTING_MODEL;//process.env.POSTING_MODEL;//"mistralai/Mistral-7B-Instruct-v0.2";  
-const replying_model = process.env.REPLYING_MODEL;//"mistralai/Mistral-7B-Instruct-v0.2"; 
+const replying_model = process.env.TESTING_MODEL;//"mistralai/Mistral-7B-Instruct-v0.2"; 
 
 const togetherClient = new Together({
   apiKey: apiKey,  
@@ -27,12 +27,12 @@ async function performUserAction(user, actionType) {
       break;
     case 2:
       await timedExecution('liking', async () => {
-        await likePost(user);
+        await likeAPost(user);
     });
       break;
     case 3:
       await timedExecution('disliking', async () => {
-        await dislikePost(user);
+        await dislikeAPost(user);
       });
       break;
     default:
@@ -133,27 +133,61 @@ async function generatePost2(user) {
   }
 }
 
-async function commentOnPost(user) {
-  if (posts.length === 0) return;
-
-  const post = posts[Math.floor(Math.random() * posts.length)];
-  const commentText = `Interesting view, ${user.username} responds.`; // Simplified example
-
-  comments.push({
-    id: generateId(),
-    postId: post.id,
-    userId: user.id,
-    content: commentText,
-    timestamp: Date.now(),
-  });
+async function commentOnPost(user) { 
+    try {
+      const persona = `You are a social media user with a politically neutral leaning. Respond to the following Tweet:`;
   
-  user.timeBudget.total = Math.max(0, user.timeBudget.total - 20); // Deduct 10 but ensure it doesn't go below 0
-  user.timeBudget.used += 20;
+      // Get posts sorted by rank descending (in memory)
+      let sortedPosts = [...posts].sort((a, b) => b.rank - a.rank);
+  
+      if (sortedPosts.length === 0) {
+        console.warn("⚠️ No posts available for reply.");
+        return null;
+      }
+  
+      const post = sortedPosts[0]; // Top ranked post
+      const thread = await getThreadAgentOnComments(user);
+      const interactions = await getInteractionsAgentOnPosts(user);
+  
+      let prompt = `You are browsing the online social network Twitter and adhering to the style of the platform. Respond concisely in a few words to the post, based on your personality.\n`;
+  
+      if (interactions.length > 0) {
+        prompt += `\nYour recent interactions:\n${JSON.stringify(interactions, null, 2)}\n-----------------`;
+      }
+  
+      if (thread.length > 0) {
+        prompt += `\nRespond to this thread:\n${JSON.stringify(thread, null, 2)}\n-----------------`;
+      }
+  
+      prompt += `\nResponse:`;
+  
+      const response = await togetherClient.chat.completions.create({
+        messages: [
+          { role: "system", content: persona },
+          { role: "user", content: prompt }
+        ],
+        model: replying_model,
+      });
+  
+      const replyText = response.choices?.[0]?.message?.content?.trim();
+  
+      if (replyText) {
+        await addAComment(user, replyText, user.id, post.id, user.username);
+      }
+      user.timeBudget.total = Math.max(0, user.timeBudget.total - 20); // Deduct 10 but ensure it doesn't go below 0
+      user.timeBudget.used += 20;
 
-  console.log(`${user.username} commented on post ${post.id}:`, commentText);
-  console.log(`Total time reduced to ${user.username}:`, user.timeBudget.total);
-  console.log(`used increased to ${user.username}:`, user.timeBudget.used);
-}
+        console.log(`${user.username} commented on post ${post.id}:`, replyText);
+        console.log(`Total time reduced to ${user.username}:`, user.timeBudget.total);
+        console.log(`used increased to ${user.username}:`, user.timeBudget.used);
+  
+    } catch (err) {
+      console.error("❌ Error in agentReplyCommentLoop:", err);
+      return null;
+    }
+  }
+
+
 
 async function likePost(user) {
   if (posts.length === 0) return;

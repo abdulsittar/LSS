@@ -8,14 +8,16 @@ class User {
     this.posts = [];
     this.loggedIn = false;
     this.timeBudget = { total: 100, used: 0 };
-    this.entertainmentScore = 0;
-    this.feedbackScore = 0;
-    this.motivation = 100;
-    this.engagement = 100;
-    this.success = 1;
-    this.notificationEffect = 1;
-    this.frustration = 0;
-    this.biases = {};
+    
+    // Randomizing values for each user
+    this.entertainmentScore = Math.random() * 100; // Random score between 0 and 100
+    this.feedbackScore = Math.random() * 100; // Random score between 0 and 100
+    this.motivation = Math.random() * 100; // Random motivation between 0 and 100
+    this.engagement = Math.random() * 100; // Random engagement between 0 and 100
+    this.success = Math.random(); // Random success factor between 0 and 1
+    this.notificationEffect = Math.random() * 2 + 0.5; // Random effect between 0.5 and 2
+    this.frustration = Math.random() * 50; // Random frustration between 0 and 50
+    this.biases = {}; // You can also randomize biases based on user characteristics
     this.opinionModel = { updateOpinion: () => {} };
     this.logger = { logEvent: (msg) => console.log(msg) };
     this.actor = { performActions: () => {} };

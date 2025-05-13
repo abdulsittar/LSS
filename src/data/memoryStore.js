@@ -12,7 +12,7 @@ module.exports = {
     likingTiming: [],
     dislikingTiming: [],
     historyTiming: [],
-    togetherTiming: []
-    
+    togetherTiming: [],
+    RankingResults: []
   };
   
