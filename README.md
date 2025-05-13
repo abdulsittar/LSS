@@ -39,53 +39,7 @@ A Node.js application for running and analyzing large-scale social media simulat
 
 ## Equations
 
-Time Utility (calculateTimeUtility):
-
-U_time(t_spent, T_total) = - ( log( 1 + exp(t_spent - T_total) ) + 0.5 * penalty(t_spent, T_total) )
-
-
-$$
-\text{penalty}(t_{\text{spent}}, T_{\text{total}}) = 
-\begin{cases} 
-\log(1 + 0.5) & \text{if } t_{\text{spent}} > T_{\text{total}} \\
-0 & \text{if } t_{\text{spent}} \leq T_{\text{total}}
-\end{cases}
-$$
-
-Feedback Utility (calculateFeedbackUtility):
-
-$$
-U_{\text{feedback}}(F) =
-\begin{cases}
-\log(1 + F) & \text{if } F \geq 0 \\
--\log(1 - F) & \text{if } F < 0
-\end{cases}
-$$
-
-Entertainment Utility (calculateEntertainmentUtility):
-U_entertainment(entertainment_score) = 
-    { log(1 + entertainment_score)  if  entertainment_score >= 0
-    { -log(1 - entertainment_score) if  entertainment_score < 0
-
-
-Total Utility (EUon) (calculateEUon):
-$$
-U_{\text{on}} = 0.4 \cdot U_{\text{time}}(t_{\text{spent}}, T_{\text{total}}) + 0.3 \cdot U_{\text{entertainment}}(E) + 0.3 \cdot U_{\text{feedback}}(F)
-$$
-
-
-Net Utility Difference (calculateNetUtilityDifference):
-$$
-\Delta U = U_{\text{on}} - U_{\text{off}} = U_{\text{on}} - 0
-$$
-
-Logon Probability (calculateLogonProbability):
-$$
-P_{\text{logon}} = \frac{1}{1 + \exp(-\text{sensitivity} \cdot \Delta U)}
-$$
-
-
-
+![Equation](images/equations.png)
 
 
 Time Budget (Ti):
