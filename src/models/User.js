@@ -88,7 +88,7 @@ class User {
       return false;
     }
 
-    if (this.timeBudget.total > 0 && logonProb >= 0.5) {
+    if (this.timeBudget.total > 0 && logonProb >= Math.random()) {
       this.loggedIn = true;
       this.logger.logEvent(`User ${this.username} activated at ${currentTime}`);
       this.actor.performActions(this);
