@@ -57,7 +57,7 @@ async function runSimulation() {
     }
   );
 
-  await createNetwork(req, res);
+  //await createNetwork(req, res);
   //saveDataToJson();
 
   let users = getAllUsers();

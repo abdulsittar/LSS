@@ -33,12 +33,13 @@ class Ranker {
     }
 
     const observations = [
-      req.weights.likes * req.engagement.calculate(post.likes, req.referenceDatetime, req.decay),
-      req.weights.dislikes * req.engagement.calculate(post.dislikes, req.referenceDatetime, req.decay),
-      req.weights.reposts * req.engagement.calculate(post.reposts, req.referenceDatetime, req.decay),
-      req.weights.comments * req.engagement.calculate(post.comments, req.referenceDatetime, req.decay),
-      req.weights.commentsLikes * req.engagement.calculate(post.commentsLikes, req.referenceDatetime, req.decay),
-      req.weights.commentsDislikes * req.engagement.calculate(post.commentsDislikes, req.referenceDatetime, req.decay),
+      req.weights.likes * req.engagement.calculate(post.likes || [], req.referenceDatetime, req.decay),
+      req.weights.dislikes * req.engagement.calculate(post.dislikes || [], req.referenceDatetime, req.decay),
+      req.weights.reposts * req.engagement.calculate(post.reposts || [], req.referenceDatetime, req.decay),
+      req.weights.comments * req.engagement.calculate(post.comments || [], req.referenceDatetime, req.decay),
+      req.weights.commentsLikes * req.engagement.calculate(post.commentsLikes || [], req.referenceDatetime, req.decay),
+      req.weights.commentsDislikes * req.engagement.calculate(post.commentsDislikes || [], req.referenceDatetime, req.decay),
+
     ];
 
     return (
@@ -63,12 +64,13 @@ class Ranker {
           const repost = posts.find((p) => p.id === repostId);
           return repost?.createdAt || referenceDatetime;
         });
-        
+
         const commentsTimestamp = (postComments || []).map((c) => c.createdAt);
         const commentsLikes = (postComments || []).flatMap((c) => (c.likes || []).map(() => referenceDatetime));
         const commentsDislikes = (postComments || []).flatMap((c) => (c.dislikes || []).map(() => referenceDatetime));
 
-        const timestamp = post.createdAt;
+        const timestamp = post.createdAt ? new Date(post.createdAt) : referenceDatetime;
+
 
         return {
           id: post.id,

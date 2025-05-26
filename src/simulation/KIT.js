@@ -3,7 +3,7 @@ const fs = require('fs');  // Import the filesystem module
 const memoryStore = require('../data/memoryStore.js');
 const User = require('../models/User.js');
 const { createNetwork } = require('../network/networkController.js'); // Import the function directly
-const { performUserAction } = require('../services/Actions.js'); 
+const { performUserAction } = require('../services/Actions.js');
 const { Ranker } = require('../ranker/Ranker.js');
 const { timedExecution } = require('../utils/helper');
 const { saveTimingGraph, saveSentimentGraph, sentimentScoresLocal, sentimentScoresForComments } = require('../utils/chartHelper');
@@ -107,7 +107,7 @@ async function runSimulation() {
     }
   );
 
-  await createNetwork(req, res);
+  //await createNetwork(req, res);
   //saveDataToJson();
 
   let users = getAllUsers();
@@ -115,7 +115,7 @@ async function runSimulation() {
 
   for (let j = 0; j < process.env.ITERATIONS; j++) {
     users = getAllUsers(); // refresh in case changed
-    
+
     const group1Limit = Math.floor(totalUsers * 0.2);  // 20%
     const group2Limit = group1Limit + Math.floor(totalUsers * 0.3);  // 50%
     const group3Limit = group2Limit + Math.floor(totalUsers * 0.3);  // 80%
@@ -130,8 +130,10 @@ async function runSimulation() {
         await timedExecution('ranking', async () => {
           await ranker.fetchAndRankPosts();
         });
-        // Decision Logic: Calculate action utilities and decide on an action
+
         let actionType;
+        // Decision Logic: Calculate action utilities and decide on an action
+        /*let actionType;
         const actions = ["post", "comment", "like", "dislike"];
         const utilities = {};
 
@@ -148,15 +150,17 @@ async function runSimulation() {
 
         // Optional: Probabilistic decision based on softmax
         actionType = softmaxChoice(utilities, 1.2);  // You can use either `decideUserAction(currentUser)` or `softmaxChoice(utilities)`
-
+*/
         // Mapping action types to the respective actions
-        if (actionType === "post") {
+
+        // Assign actionType based on user index group
+        if (i < group1Limit) {
           actionType = 0; // post
-        } else if (actionType === "comment") {
+        } else if (i < group2Limit) {
           actionType = 1; // comment
-        } else if (actionType === "like") {
+        } else if (i < group3Limit) {
           actionType = 2; // like
-        } else if (actionType === "dislike") {
+        } else if (i < group4Limit) {
           actionType = 3; // dislike
         }
 
@@ -222,7 +226,7 @@ function saveDataToJson() {
     })),
     posts: memoryStore.posts,  // Assuming posts are stored in memoryStore
     comments: memoryStore.comments,  // Assuming comments are stored in memoryStore
-    likes: memoryStore.likes, 
+    likes: memoryStore.likes,
     dislikes: memoryStore.dislikes,
     rankingTiming: memoryStore.rankingTiming,
     postingTiming: memoryStore.postingTiming,
@@ -236,7 +240,7 @@ function saveDataToJson() {
   // Save the data to a JSON file
   fs.writeFileSync('Synthetic Data/simulation_data.json', JSON.stringify(data, null, 2), 'utf-8');
   console.log("Data saved to Synthetic Data/simulation_data.json");
-  
+
   saveTimingGraph('ranking', 'Analysis/ranking_timing_chart.png');
   saveTimingGraph('posting', 'Analysis/posting_timing_chart.png');
   saveTimingGraph('commenting', 'Analysis/commenting_timing_chart.png');
