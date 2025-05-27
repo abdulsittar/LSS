@@ -116,10 +116,10 @@ async function runSimulation() {
   for (let j = 0; j < process.env.ITERATIONS; j++) {
     users = getAllUsers(); // refresh in case changed
 
-    const group1Limit = Math.floor(totalUsers * 0.2);  // 20%
-    const group2Limit = group1Limit + Math.floor(totalUsers * 0.3);  // 50%
-    const group3Limit = group2Limit + Math.floor(totalUsers * 0.3);  // 80%
-    const group4Limit = group2Limit + Math.floor(totalUsers * 0.2);  // 80%
+    const group1Limit = Math.floor(totalUsers * 0.25);  // 20%
+    const group2Limit = group1Limit + Math.floor(totalUsers * 0.25);  // 30%
+    const group3Limit = group2Limit + Math.floor(totalUsers * 0.25);  // 30%
+    const group4Limit = group3Limit + Math.floor(totalUsers * 0.25);  // 20%
 
     for (let i = 0; i < totalUsers; i++) {
       const currentUser = users[i];
@@ -154,16 +154,21 @@ async function runSimulation() {
         // Mapping action types to the respective actions
 
         // Assign actionType based on user index group
-        if (i < group1Limit) {
+               if (i < group1Limit) {
           actionType = 0; // post
+          
         } else if (i < group2Limit) {
           actionType = 1; // comment
+          
         } else if (i < group3Limit) {
           actionType = 2; // like
+          
         } else if (i < group4Limit) {
           actionType = 3; // dislike
+          
         }
-
+	      console.log("actionType");
+	      console.log(actionType);
         await performUserAction(currentUser, actionType);
       }
     }

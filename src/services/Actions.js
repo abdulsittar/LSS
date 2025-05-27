@@ -15,6 +15,7 @@ const togetherClient = new Together({
 });
 
 async function performUserAction(user, actionType) {
+  console.log(actionType)
   switch (actionType) {
     case 0:
       await timedExecution('posting', async () => {
@@ -185,7 +186,7 @@ async function likeAPost(user) {
     // Get interactions (this is a placeholder for fetching interactions from memory)
     const interactions = await getInteractionsAgentOnPosts(user);
 
-    let persona = 'You are a social media user with a political neutral leaning. Reply only with "false" or "true"';
+    let persona = 'You are a social media user with a political neutral leaning. Reply only with "False" or "True"';
 
     let prompt = `Your native language is English. You are browsing Twitter. Decide whether to like this post based on your personality.\nPost: ${post.desc}`;
 
@@ -209,7 +210,7 @@ async function likeAPost(user) {
     console.log({ Like: replyText });
     console.log(`Like Decision: ${replyText}`);
 
-    if (replyText != "false") {
+    if (replyText == "True") {
       // If the agent likes the post, record the like (in-memory operation)
 
       likes.push({
@@ -250,7 +251,7 @@ async function dislikeAPost(user) {
     // Get interactions (this is a placeholder for fetching interactions from memory)
     const interactions = await getInteractionsAgentOnPosts(user);
 
-    let persona = 'You are a social media user with a political neutral leaning. Reply only with "false" or "true"';
+    let persona = 'You are a social media user with a political neutral leaning. Reply only with "False" or "True"';
 
     let prompt = `Your native language is English. You are browsing Twitter. Decide whether to dislike this post based on your personality.\nPost: ${post.desc}`;
 
@@ -274,7 +275,7 @@ async function dislikeAPost(user) {
     console.log({ Dislike: replyText });
     console.log(`Dislike Decision: ${replyText}`);
 
-    if (replyText != "false") {
+    if (replyText == "True") {
 
       dislikes.push({
         id: generateId(),
